@@ -1,0 +1,105 @@
+<!--
+  Generated template for the HomePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <button menuToggle class="button-menu">
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>home</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+<div class="load" *ngIf="load">
+  <div class="cont-img">
+    <img src="img/load.gif" alt="" />
+  </div>
+</div>
+
+<!-- menu para seleccionar ruta -->
+<div class="menu" *ngIf="menu">
+  <div class="titulo">
+    {{titulo}}
+    <span class="icon-times ex" (click)='menu=false;inicializador()'></span>
+  </div>
+  <div class="flex-container contenedor">
+    <div class="flex-20 flecha" style="min-width: 96px">
+      <!-- flecha 1 -->
+      <img src="img/Left.svg" alt="" *ngIf="estado!=0" (click)="estado=estado-1;estadoAlgoritmo()" />
+    </div>
+    <div class="flex-60">
+      <!-- Parte uno -->
+      <div class="fondo1" *ngIf="estado == 0">
+        <div class="fondo2">
+          <div class="flex-container cont2">
+            <div class="flex-100" style="min-height: 16px;">
+              <span class="up" *ngIf="kilometro<50" (click)="kilometro = kilometro +1; radio()"></span>
+            </div>
+            <div class="flex-100" style="font-size:25px;">
+              {{kilometro}} K
+            </div>
+            <div class="flex-100" style="min-height: 16px;">
+              <span class="down" *ngIf="kilometro>0" (click)="kilometro = kilometro -1;radio()"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Parte dos -->
+      <div class="flex-container cont2" *ngIf="estado == 1">
+        <div class="flex-100" style="min-height: 16px; margin-bottom: 10px" *ngIf="listaPuntos.length>0">
+          <span class="up" *ngIf="numPunto<(listaPuntos.length -1)" (click)="numPunto = numPunto +1; renderPin()"></span>
+        </div>
+        <div class="cuadrado1 flex-100" *ngIf="listaPuntos.length>0">
+          <div class="cuadrado2">
+            <span>{{listaPuntos[numPunto].name}}</span>
+          </div>
+        </div>
+        <div class="flex-100" style="min-height: 16px; margin-top: 14px" *ngIf="listaPuntos.length>0">
+          <span class="down" *ngIf="numPunto>0" (click)="numPunto = numPunto -1; renderPin()"></span>
+        </div>
+      </div>
+
+    </div>
+    <div class="flex-20 flecha">
+      <!-- flecha 2 -->
+      <img src="img/Right.svg" alt="" (click)="estado=estado+1;estadoAlgoritmo()" />
+    </div>
+  </div>
+</div>
+
+
+<div   class="info-place" *ngIf="infoPlaceSelected">
+  <div class="footer">
+    <div class="title">
+      <span class="text">{{infoPlaceSelected.name}}</span>
+    </div>
+    <button type="button" name="button" class="exit" (click)="infoPlaceSelected = null"><span class="icon-times"></span></button>
+  </div>
+  <div class="img-place">
+    <img src="{{infoPlaceSelected.imgUrl}}" alt="" />
+  </div>
+  <div class="desciption-place">
+    {{infoPlaceSelected.descripcion}}
+  </div>
+</div>
+
+
+<ion-content class="home">
+  <div id="map" class="map"></div>
+  <div class="logo1">
+    <button type="button" name="button" (click)='menu=true'>GO!</button>
+  </div>
+  <div class="logo2">
+    <button type="button" name="button" menuToggle><span style="margin-top: -9px;"></span><span></span><span></span></button>
+  </div>
+  <div class="logo3">
+    <button type="button" name="button" (click)='centrarMapa()' *ngIf="stateRun"></button>
+    <button type="button" name="button" (click)='darPosicion()' *ngIf="!stateRun"></button>
+  </div>
+
+</ion-content>

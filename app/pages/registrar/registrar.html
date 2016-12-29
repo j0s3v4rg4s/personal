@@ -1,0 +1,58 @@
+<!--
+  Generated template for the RegistrarPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<div class="load" *ngIf="load">
+  <div class="cont-img">
+    <img src="img/load.gif" alt="" />
+  </div>
+</div>
+
+<ion-content padding class="registrar">
+  <img src="img/logoRun.svg" alt="" />
+  <div class="flex-container" style="flex-direction: column;">
+    <div class="flex-10  info-login">
+      <input type="text" name="name" value="" placeholder="name" [(ngModel)]="name">
+    </div>
+    <div class="flex-10  info-login">
+      <input type="email" name="name" value="" placeholder="email" [(ngModel)]="user">
+    </div>
+    <div class="flex-10  info-login">
+      <input type="password" name="name" value="" placeholder="password" [(ngModel)]="password">
+    </div>
+    <div class="flex-10 info-login">
+      <button type="button" (click)="registrar()">REGISTER</button>
+    </div>
+    <div class="flex-container or-clase" style="justify-content:space-around">
+      <div class="flex-3">
+        <hr class="lineaPunteada">
+      </div>
+      <div class="flex-3">
+        or
+      </div>
+      <div class="flex-3">
+        <hr class="lineaPunteada">
+      </div>
+    </div>
+    <div class="flex-10">
+      <button type="button" class="fb" (click)="facebookSignup()"><span class="icon-facebook sp-fb"></span>Sign in with Facebook</button>
+    </div>
+    <div class="flex-container or-clase" style="justify-content:space-around">
+      <div class="flex-2">
+        <hr class="lineaPunteada">
+      </div>
+      <div class="flex-6">
+      Already registered?
+      </div>
+      <div class="flex-2">
+        <hr class="lineaPunteada">
+      </div>
+    </div>
+    <div class="flex-10 info-login">
+      <button type="button" class="reg" navPop>SIGN IN</button>
+    </div>
+  </div>
+</ion-content>

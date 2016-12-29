@@ -1,0 +1,256 @@
+.home {
+  .map {
+    height: 100%;
+  }
+
+  .logo1 {
+    position: absolute;
+    bottom  : 3%;
+    left    : 5%;
+
+    button {
+      height            : 60px;
+      width             : 60px;
+      border-radius     : 50%;
+      background-color  : #fa6100;
+      color             : white;
+      font-size         : 18px;
+      font-weight       : 500;
+      -webkit-box-shadow: 0 4px 37px -2px rgba(0,0,0,0.4);
+      -moz-box-shadow   : 0 4px 37px -2px rgba(0,0,0,0.4);
+      box-shadow        : 0 4px 37px -2px rgba(0,0,0,0.4);
+
+      span {
+        position: relative;
+        right   : -1px;
+      }
+    }
+  }
+
+  .logo2 {
+    position: absolute;
+    bottom  : 3%;
+    right   : 5%;
+
+    button {
+      height            : 60px;
+      width             : 60px;
+      background-color  : #d92732;
+      border-radius     : 50%;
+      -webkit-box-shadow: 0 4px 37px -2px rgba(0,0,0,0.4);
+      -moz-box-shadow   : 0 4px 37px -2px rgba(0,0,0,0.4);
+      box-shadow        : 0 4px 37px -2px rgba(0,0,0,0.4);
+
+      span {
+        background   : white;
+        width        : 100%;
+        height       : 3px;
+        margin-bottom: 5px;
+        display      : block;
+      }
+    }
+  }
+
+  .logo3 {
+    position: absolute;
+    bottom  : 3%;
+    left    : 42%;
+
+    button {
+      height            : 60px;
+      width             : 60px;
+      border-radius     : 50%;
+      //background-color: #fa6100;
+      background        : url('../../img/ubicacion.svg') no-repeat 50% 50%;
+      background-size   : 100% 100%;
+      color             : white;
+      font-size         : 18px;
+      font-weight       : 500;
+      -webkit-box-shadow: 0 4px 37px -2px rgba(0,0,0,0.4);
+      -moz-box-shadow   : 0 4px 37px -2px rgba(0,0,0,0.4);
+      box-shadow        : 0 4px 37px -2px rgba(0,0,0,0.4);
+
+      span {
+        position: relative;
+        right   : -1px;
+      }
+    }
+  }
+}
+
+.menu {
+  position        : absolute;
+  z-index         : 9;
+  width           : 100%;
+  height          : 200px;
+  background-color: #1e1e1e;
+  bottom          : 0;
+
+  .titulo {
+    width     : 100%;
+    height    : 40px;
+    background: #f65a07;
+    background: -webkit-gradient(left top, right top, color-stop(0%, #f65a07), color-stop(100%, #d92733));
+    background: -webkit-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background: linear-gradient(to right, #f65a07 0%, #d92733 100%);
+    color     : white;
+    text-align: center;
+    padding   : 10px;
+    position  : relative;
+    font-size : 15px;
+
+    .ex {
+      position: absolute;
+      top     : 12px;
+      right   : 18px;
+    }
+  }
+
+  .contenedor {
+    justify-content: space-around;
+    align-items    : center;
+    height         : 160px;
+    color          : white;
+  }
+
+  .fondo1 {
+    background   : #f65a07;
+    background   : -webkit-gradient(left top, right top, color-stop(0%, #f65a07), color-stop(100%, #d92733));
+    background   : -webkit-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background   : linear-gradient(to right, #f65a07 0%, #d92733 100%);
+    width        : 100px;
+    height       : 100px;
+    border-radius: 50%;
+    padding      : 5px;
+  }
+
+  .fondo2 {
+    width        : 100%;
+    height       : 100%;
+    background   : #2b2b2b;
+    border-radius: 100%;
+    overflow     : hidden;
+  }
+
+  .cuadrado1 {
+    background   : #f65a07;
+    background   : -webkit-gradient(left top, right top, color-stop(0%, #f65a07), color-stop(100%, #d92733));
+    background   : -webkit-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background   : linear-gradient(to right, #f65a07 0%, #d92733 100%);
+    width        : 125px;
+    height       : 40px;
+    border-radius: 5px;
+    padding      : 2px;
+  }
+
+  .cuadrado2 {
+    width        : 100%;
+    height       : 100%;
+    background   : #2b2b2b;
+    border-radius: 5px;
+    overflow     : hidden;
+    padding-top  : 10px;
+  }
+
+  .flecha {
+    text-align: center;
+
+    img {
+      width: 40%;
+    }
+  }
+
+  .cont2 {
+    flex-direction : column;
+    height         : 100%;
+    justify-content: space-around;
+    text-align     : center;
+  }
+
+  .up {
+    background-color : #fa6100;
+    -webkit-mask     : url("../../img/Up.svg") no-repeat 50% 50%;
+    mask             : url("../../Up.svg") no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size        : cover;
+    width            : 21px;
+    height           : 13px;
+    display          : -webkit-inline-box;
+  }
+
+  .down {
+    background-color : #d92732;
+    -webkit-mask     : url("../../img/Down.svg") no-repeat 50% 50%;
+    mask             : url("../../Down.svg") no-repeat 50% 50%;
+    -webkit-mask-size: cover;
+    mask-size        : cover;
+    width            : 21px;
+    height           : 13px;
+    display          : -webkit-inline-box;
+  }
+}
+
+.info-place {
+  background-color: rgba(0, 0, 0, 0.9);
+  position        : absolute;
+  top             : 0;
+  width           : 100%;
+  height          : 100%;
+  z-index         : 10;
+
+  .title {
+    margin-top: 5px;
+  }
+
+  .exit {
+    position  : absolute;
+    top       : 4px;
+    right     : 0;
+    height    : initial;
+    background: none;
+  }
+
+  .footer {
+    position  : absolute;
+    top       : 0;
+    width     : 100%;
+    height    : 6%;
+    background: #f65a07;
+    background: -moz-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #f65a07), color-stop(100%, #d92733));
+    background: -webkit-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background: -o-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background: -ms-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background: linear-gradient(to right, #f65a07 0%, #d92733 100%);
+    text-align: center;
+    color     : white;
+    font-size : 18px;
+  }
+
+  .img-place {
+    position        : absolute;
+    top             : 6%;
+    width           : 100%;
+    height          : 50%;
+    text-align      : center;
+    background-color: black;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .desciption-place {
+    position     : absolute;
+    top          : 56%;
+    width        : 100%;
+    height       : 44%;
+    padding-top  : 10px;
+    padding-left : 10px;
+    padding-right: 10px;
+    color        : white;
+    font-size    : 20px;
+    overflow-y   : auto;
+    text-align   : justify;
+  }
+}

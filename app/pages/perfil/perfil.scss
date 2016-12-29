@@ -1,0 +1,145 @@
+.perfil {
+  .toolbar-background {
+    border: none;
+  }
+
+  .toolbar-background {
+    background-color: #25201d;
+  }
+
+  .toolbar-title {
+    color: white;
+  }
+  background-color: #25201d;
+  color           : white;
+  text-align      : center;
+
+  .borde-img {
+    background   : #f65a07;
+    background   : -moz-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background   : -webkit-gradient(left top, right top, color-stop(0%, #f65a07), color-stop(100%, #d92733));
+    background   : -webkit-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background   : -o-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background   : -ms-linear-gradient(left, #f65a07 0%, #d92733 100%);
+    background   : linear-gradient(to right, #f65a07 0%, #d92733 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=  '#f65a07', endColorstr='#d92733', GradientType=1 );
+    width        : 130px;
+    height       : 130px;
+    padding      : 5px;
+    border-radius: 50%;
+    display      : inline-block;
+  }
+
+  .fondo-img {
+    background-color: black;
+    text-align      : center;
+    width           : 100%;
+    height          : 100%;
+    border-radius   : 50%;
+    overflow        : hidden;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .con1 {
+    justify-content: center;
+
+    button {
+      padding        : 0;
+      height         : inherit;
+      background     : none;
+      text-decoration: underline;
+    }
+  }
+
+  .info-user {
+    margin-top: 40px;
+
+    input {
+      width           : 100%;
+      width           : 100%;
+      border          : none;
+      height          : 50px;
+      border-radius   : 7px;
+      background-color: rgba(255, 255, 255, 0.4);
+      font-size       : 18;
+      text-align      : center;
+      padding         : 10px;
+    }
+
+    input[type="number"] {
+      text-align: left;
+    }
+
+    input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: white;
+    }
+
+    input::-moz-placeholder {
+      /* Firefox 19+ */
+      color: white;
+    }
+
+    input:-ms-input-placeholder {
+      /* IE 10+ */
+      color: white;
+    }
+
+    input:-moz-placeholder {
+      /* Firefox 18- */
+      color: white;
+    }
+
+    .cont-fecha {
+      height          : 50px;
+      border-radius   : 7px;
+      background-color: rgba(255,255,255,0.4);
+      position        : relative;
+
+      ion-datetime {
+        padding-top: 15px;
+      }
+
+      span {
+        position: absolute;
+        top     : 5px;
+      }
+    }
+
+    ion-select {
+      display: inline-flex;
+    }
+
+    .select-text {
+      color: white;
+    }
+
+    .unidad {
+      position: absolute;
+      top     : 23px;
+      right   : 13px;
+    }
+  }
+
+  .run {
+    width           : 100%;
+    background-color: white;
+    color           : #ff7129;
+    text-transform  : uppercase;
+    letter-spacing  : 5px;
+    box-shadow      : none;
+    font-size       : 18px;
+    font-weight     : 400;
+    border-radius   : 7px;
+    height          : 42px;
+    margin-top      : 0;
+    margin-top      : 60px;
+  }
+
+  .fot {
+    width: 100% !important;
+  }
+}
